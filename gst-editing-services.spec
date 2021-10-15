@@ -3,7 +3,7 @@
 #global shortcommit %(c=%{gitcommit}; echo ${c:0:5})
 
 Name:		gst-editing-services
-Version:        1.19.1
+Version:        1.19.2
 Release:        7%{?gitcommit:.git%{shortcommit}}%{?dist}
 Summary:	Gstreamer editing services
 
@@ -88,6 +88,9 @@ cp data/completions/ges-launch-1.0 \
 %{_datadir}/gir-1.0/GES-1.0.gir
 
 %changelog
+
+* Mon Oct 04 2021 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.19.2-7
+- Updated to 1.19.2
 
 * Sun Jun 20 2021 Unitedrpms Project <unitedrpms AT protonmail DOT com> 1.19.1-7
 - Rebuilt with the real version 1.19.1
